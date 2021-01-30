@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "champions",
+  "info": {
+    "name": "Champions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Label": {
+      "type": "string"
+    },
+    "Rank": {
+      "type": "enumeration",
+      "enum": [
+        "S",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    "Lane": {
+      "type": "enumeration",
+      "enum": [
+        "Top",
+        "Middle",
+        "Jungler",
+        "Bot",
+        "Support"
+      ]
+    },
+    "counters": {
+      "collection": "champions"
+    },
+    "strongs": {
+      "collection": "champions"
+    },
+    "Icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

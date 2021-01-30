@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "missions",
+  "info": {
+    "name": "Missions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "startclock": {
+      "type": "float"
+    },
+    "endclock": {
+      "type": "float"
+    },
+    "userctx": {
+      "type": "string"
+    }
+  }
+}
